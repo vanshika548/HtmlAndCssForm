@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flex sample</title>
+        <style>
+            body{
+                padding: 2 px;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: rgb(101, 108, 112);
+                font-weight: bold;
+                padding: 10px;
+            }
+            article{
+                padding: 10 px;
+                margin: 10px;
+                background: aqua;
+            }
+            .mainContainerItem{
+                text-align: left;
+                background: darkblue;
+            }
+            .sideBarLeftItem{
+                background: gold;
+            }
+            .sideBarRightItem{
+                background: hotpink;
+            }
+            .sideBarItem{
+                flex: 1 0 0;
+                border: 0px solid green;
+            }
+            .mainContainerItem{
+                flex:3 0px;
+            }
+            .sideBarLeftItem{
+                order: 1;
+            }
+            .mainContainerItem{
+                order: 2;
+            }
+            .sideBarRightItem{
+                order: 3;
+            }
+        </style>
+    </head>
+    <body>
+         <header class="headerContainer"><h1>Sample Header Flexbox Example</h1></header>
+         <div class="mainContainer">
+             <section class ="mainContainerItem">
+                 <article>
+                     <h2>First Article</h2>
+                     <p>Combining the best experiences in tile manufacture and latest technology, ArTile become a highest achievement in lifestyle.
+                        ArTile is driven by our Customers which using Granito products and by our relationships with our Distributors forming the basis of many success stories for more than 20 years.
+                        The success as a trustworth brand is what drives Granito to develop new and innovative products to fullfil the needed for a lifestyle product.</p>
+                 </article>
+                 <article>
+                    <h2>Second Article</h2>
+                    <p>Combining the best experiences in tile manufacture and latest technology, ArTile become a highest achievement in lifestyle.
+                       ArTile is driven by our Customers which using Granito products and by our relationships with our Distributors forming the basis of many success stories for more than 20 years.
+                       The success as a trustworth brand is what drives Granito to develop new and innovative products to fullfil the needed for a lifestyle product.</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Combining the best experiences in tile manufacture and latest technology, ArTile become a highest achievement in lifestyle.
+                       ArTile is driven by our Customers which using Granito products and by our relationships with our Distributors forming the basis of many success stories for more than 20 years.
+                       The success as a trustworth brand is what drives Granito to develop new and innovative products to fullfil the needed for a lifestyle product.</p>
+                </article>
+             </section>
+             <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sidebar>
+             <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sidebar>
+         </div>
+         <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
